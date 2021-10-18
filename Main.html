@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Meet IT Demo</title>
+    <style>
+        @import "allcss.css";
+    </style>
+
+</head>
+<body>
+
+<div>
+    <h1 class="center" style="color:white" id="thumbnail">Gruppe 9A </h1>
+</div>
+
+<div class="box">
+    <h1>Aktiviteter</h1>
+    <hr>
+
+
+    <!-- Trigger/Open The Modal -->
+    <button class="modal-button" href="#myModal1">Felles Trening</button>
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Felles Trening</h2>
+            </div>
+            <div class="modal-body">
+                <p>Dato: Onsdag 13.10 <br> Tid: Klokken 16:00 <br> Adresse: Spicheren</p>
+            </div>
+
+        </div>
+
+    </div>
+<hr>
+    <!-- Trigger/Open The Modal -->
+    <button class="modal-button" href="#myModal2">Bowling</button>
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Chill Bowling</h2>
+            </div>
+            <div class="modal-body">
+                <p>Dato: Torsdag 14.10 <br> Tid: Klokken 19:00 <br> Adresse: Lucky Strike 21</p>
+                <p>Trenger ikke å ta med noe særlig, Du kan ta med bowling sko hvis du har det.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+    <!-- Trigger/Open The Modal -->
+    <button class="modal-button" href="#myModal3">Fotball Kamp</button>
+
+    <!-- The Modal -->
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Fotball kamp</h2>
+            </div>
+            <div class="modal-body">
+                <p>Dato: Fredag 15.10 <br> Tid: Klokken 17:30 <br> Adresse: Stadioen 18</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script>
+    // Get the button that opens the modal
+    var btn = document.querySelectorAll("button.modal-button");
+
+    // All page modals
+    var modals = document.querySelectorAll('.modal');
+
+    // Get the <span> element that closes the modal
+    var spans = document.getElementsByClassName("close");
+
+    // When the user clicks the button, open the modal
+    for (var i = 0; i < btn.length; i++) {
+        btn[i].onclick = function(e) {
+            e.preventDefault();
+            modal = document.querySelector(e.target.getAttribute("href"));
+            modal.style.display = "block";
+        }
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    for (var i = 0; i < spans.length; i++) {
+        spans[i].onclick = function() {
+            for (var index in modals) {
+                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            for (var index in modals) {
+                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+        }
+    }
+
+        </script>
+
+</body>
+</html>
