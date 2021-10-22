@@ -11,9 +11,10 @@
             text-align: center;
             Border-radius: 10px;
             background:white;
-            margin: 25px 500px 75px 500px;
+            margin: auto;
             width: 300px;
             height: 500px;
+            position: relative;
         }
 
         img {
@@ -40,6 +41,11 @@
         }
         .button-round {
             border-radius: 10px;
+        }
+     .navgrid {
+         padding: 0px;
+         position: absolute;
+         bottom: 0;
         }
         /* The Modal (background) */
         .modal {
