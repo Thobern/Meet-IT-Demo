@@ -36,6 +36,19 @@
             height:30px;
             width:80px;
         }
+     .button2 {
+         background-color: white;
+         border: 3px solid black;
+         color: black;
+         padding: 5px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 5px 0px;
+         height:30px;
+         width:40px;
+     }
         .button:hover {
             color: grey;
         }
@@ -47,6 +60,12 @@
          position: absolute;
          bottom: 0;
         }
+     .profil-button {
+         padding: 0px;
+         position: absolute;
+         top: 0;
+         right: 0;
+     }
         /* The Modal (background) */
         .modal {
             display: none; /* Hidden by default */
