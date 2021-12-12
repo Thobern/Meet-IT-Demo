@@ -1,13 +1,14 @@
 
 /* Her har du all css vi bruker i prosjektet */
 
-
+/*Her er bakgrunnsfargen vi bruker*/
 body{
             background-color: #001f3f;
             text-align: center;
         }
 
-
+/* box blir brukt en box midt på skjermen som skal forestilles som en mobiltelefon.
+Alt som er på hver side skal foregå innen denne klassen.*/
         .box {
             border-style: solid;
             border-color: black;
@@ -21,12 +22,14 @@ body{
             position: relative;
         }
 
+        /*img blir brukt til å lage en svart border rundt biltet (logoen) i index.html (innloggingssiden)*/
         img {
             border-style: solid;
             border-color: black;
             border-width: 3px;
             border-radius: 50%;
         }
+        /*button blir brukt til mesteparten av knappene.*/
         .button {
             background-color: white;
             border: 3px solid black;
@@ -40,6 +43,7 @@ body{
             height:30px;
             width:80px;
         }
+        /*button2 blir brukt til en knapp som trengte en litt mindre knapp*/
      .button2 {
          background-color: white;
          border: 3px solid black;
@@ -53,83 +57,23 @@ body{
          height:30px;
          width:40px;
      }
+     /*button:hover og button-round legger til noen hover effect og avrunde hjørnene til knappene*/
         .button:hover {
             color: grey;
         }
         .button-round {
             border-radius: 10px;
         }
+        /*navgrid blir brukt til å positionere hovedknappene med ikonene som skal være vår navigasjonsbar*/
      .navgrid {
          padding: 0px;
          position: absolute;
          bottom: 0;
         }
+     /*profil-button blir brukt til å positionere profil knappen i main.html*/
      .profil-button {
          padding: 0px;
          position: absolute;
          top: 0;
          right: 0;
      }
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-
-        /* Modal Content */
-        .modal-content {
-            position: relative;
-            background-color: #fefefe;
-            margin: auto;
-            padding: 0;
-            border: 1px solid #888;
-            width: 20%;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-            -webkit-animation-name: animatetop;
-            -webkit-animation-duration: 0.4s;
-            animation-name: animatetop;
-            animation-duration: 0.4s
-        }
-
-        /* Add Animation */
-        @-webkit-keyframes animatetop {
-            from {top:-300px; opacity:0}
-            to {top:0; opacity:1}
-        }
-
-        @keyframes animatetop {
-            from {top:-300px; opacity:0}
-            to {top:0; opacity:1}
-        }
-
-        /* The Close Button */
-        .close {
-            color: white;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .modal-header {
-            padding: 2px 16px;
-            background-color: #001f3f;
-            color: white;
-        }
-
-        .modal-body {padding: 2px 16px;}

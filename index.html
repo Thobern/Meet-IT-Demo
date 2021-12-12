@@ -19,14 +19,19 @@
 <body>
 
 <div>
-  <h1 class="center" style="color:white" id="thumbnail">Gruppe 9A </h1>
+  <h1 class="center" style="color:white" id="thumbnail">Gruppe 9A</h1>
 </div>
 
+<!--Her kan du se klassen "box" denne kommer til å bli gjentatt flere ganger i de andre sidene.
+ Se kommentar i allcss.css for hva den gjør.-->
 <div class="box">
   <h1>Meet IT</h1>
-  <div class="pfp">
+  <div>
       <img src="img/logo.jpg" width="160">
   </div>
+  <!--Her bruker vi <form> for å få det til å se ut som en innloggingsside ved bruk av <input>.
+  Les mer om <form> her: https://developer.mozilla.org/en-US/docs/web/html/element/form
+  Les mer om <input> her: https://developer.mozilla.org/en-US/docs/web/html/element/input-->
   <form>
     <p><b>Logg inn via Feide</b></p>
     <p>Brukernavn</p>
@@ -34,6 +39,8 @@
     <p>Passord</p>
     <input type="password">
     <br> <br>
+    <!--Etter noen linebreaks for å lage litt mellomrom kommer en knapp
+     ved hjelp av classen "button" som linker til neste side som er Interesser.html.-->
     <a href="/Meet-IT-Demo/Interesser.html" class="button button-round">Logg inn</a>
   </form>
 </div>

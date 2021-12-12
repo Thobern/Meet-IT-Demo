@@ -16,6 +16,10 @@
 <div class="box">
     <h1>Dine interesser</h1>
     <p>Velg dine interesser:</p>
+    <!--Her bruker vi <form> igjen og denne gangen sammen med <label> til å lage checkboxer der brukeren kan velge flere.
+     I dette tilfelle er det flere arrangementer
+     Les mer om <form> her: https://developer.mozilla.org/en-US/docs/web/html/element/form
+     Les mer om <label> her: https://developer.mozilla.org/en-US/docs/web/html/element/label-->
     <form>
         <label><input type="checkbox">Spisesteder</label>
         <label><input type="checkbox">Kino</label>
@@ -26,9 +30,12 @@
         <label><input type="checkbox">Volleyball</label>
         <br> <br>
 
-
+    <!--Linke til neste side som er Main.html -->
         <a href="/Meet-IT-Demo/Main.html" class="button button-round">Gå videre</a>
     </form>
+    <!--Her ser vi navgrid i bruk les kommentar i allcss.css over navgrid for å vite hva den gjør.
+       Vi har hovedkanppene våre som kommer til å være på flere sider.
+       Vi bruker universelle iknoer fra font-awesome til å beskrive hva knappene gjør og hvor de blir fraktet til.-->
     <div class="navgrid">
     <a class="button button-round" href="/Meet-IT-Demo/chat.html"><i class="fas fa-comments"></i></a>
     <a class="button button-round" href="/Meet-IT-Demo/Main.html"><i class="fas fa-map-marked-alt"></i></a>
